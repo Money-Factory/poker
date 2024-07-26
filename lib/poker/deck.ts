@@ -1,6 +1,6 @@
 import { Card, Suit, Rank } from "./card";
 
-class Deck {
+export class Deck {
     deck: Card[];
 
     constructor(deckCount: number = 1) {
@@ -29,7 +29,7 @@ class Deck {
         this.deck = shuffled;
     }
 
-    drawCard(): Card | undefined{
+    drawCard(): Card | undefined {
         return this.deck.shift();
     }
 
